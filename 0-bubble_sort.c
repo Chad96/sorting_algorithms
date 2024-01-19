@@ -5,8 +5,7 @@
 * @firstInteger: The first integer to swap.
 * @secondInteger: The second integer to swap.
 */
-void swap_integers(int *firstInteger, int *secondInteger)
-{
+void swap_integers(int *firstInteger, int *secondInteger) {
 
 	int temporaryVariable;
 
@@ -38,13 +37,9 @@ void bubble_sort(int *listOfIntegers, size_t numberOfIntegers)
 		swapsMade = true;
 		numberOfIntegersToSort = numberOfIntegers - 1;
 
-		for (currentPosition = 0; currentPosition < numberOfIntegersToSort;
-		currentPosition++)
-		{
-			if (listOfIntegers[currentPosition] > listOfIntegers[currentPosition + 1])
-			{
-				swap_integers
-				(&listOfIntegers[currentPosition], &listOfIntegers[currentPosition + 1]);
+		for (currentPosition = 0; currentPosition < numberOfIntegersToSort; currentPosition++) {
+			if (listOfIntegers[currentPosition] > listOfIntegers[currentPosition + 1]) {
+				swap_integers(&listOfIntegers[currentPosition], &listOfIntegers[currentPosition + 1]);
 				print_array(listOfIntegers, numberOfIntegers);
 				swapsMade = false;
 			}
