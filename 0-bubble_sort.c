@@ -30,7 +30,7 @@ void bubble_sort(int *listOfIntegers, size_t numberOfIntegers)
 
 	if (listOfIntegers == NULL || numberOfIntegers < 2)
 	{
-		return ();
+		return;
 	}
 
 	while (!swapsMade)
